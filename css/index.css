@@ -1,0 +1,184 @@
+body,p,section,header,nav,h2,h3,h4,h5{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style:disc;
+}
+input{
+	margin: 0;
+	padding: 0;
+}
+img{
+	border: none;
+	vertical-align: middle;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+body{
+	width: 100%;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.center{
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*header*/
+header{
+	width: 100%;
+	
+}
+html{
+	height: 100%;
+}
+body {
+
+    font-size:14px;
+    height: 100%;
+	
+
+   /*background:#FBFBEA;*/
+}
+
+
+header .titleImg{
+	height: 200px;
+	background: url(../img/association.jpg) no-repeat;
+	position: relative;
+	
+}
+header .titleImg img{
+	position: absolute;
+	bottom: 15%;
+	left: 10%;
+	opacity: 1;
+}
+header .titleImg h3{
+	position: absolute;
+	color:rgba(255,255,255,0.90);
+	font-size: 30px;
+	letter-spacing: 3px;
+	left: 25%;
+	top: 25%;
+}
+header .titleImg p{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	display: inline-block;
+	color: rgba(255,255,255,0.80);
+	margin-left: 28%;
+	margin-top: 24%;
+}
+header .titleImg .name{
+	font-size: 22px;
+}
+header .titleImg .foot{
+	margin-top: 0;
+	margin-left: 20%;
+}
+header .titleImg .number{
+	margin-top: 1%;
+	font-size: 18px;
+}
+header .titleImg .number:hover{
+	color: greenyellow;
+}
+
+header .QQGroup{
+	position: absolute;
+	right: 0;
+	
+}
+
+/*section*/
+section{
+	width: 100%;
+	height:54%;
+}
+section .blurb,.introduction{
+	margin-top: 1%;
+	margin-left: 2%;
+}
+section .blurb .title{
+	font-size: 20px;
+	color: #2ab0c9;
+	margin: 4% 0 2% 1.5%;
+	letter-spacing: 1px;
+}
+section .blurb p{
+	color: #252525;
+	margin-left: 2%;
+	letter-spacing: 3px;
+	font-size: 15px;
+	line-height: 19px;
+}
+section .blurb .foot{
+	margin-top: 2.2%;
+}
+
+section .introduction .title{
+	font-size: 20px;
+	color: #2ab0c9;
+	margin: 2.5% 0 1% 2%;
+	letter-spacing: 1px;
+}
+section .introduction li{
+	margin:2% 0 4% 2%;
+	letter-spacing: 3px;
+	font-size: 15px;
+	line-height: 19px;
+	
+}
+section .introduction .head{
+	font-size: 16px;
+	font-style: bold;
+	color: #252525;
+	letter-spacing: 3px;
+	margin-bottom: 1%;
+}
+
+
+/*footer*/
+footer{
+	width: 100%;
+	margin-top: 0.9%;
+
+}
+footer p{
+	
+	font-size: 18px;
+	color: #2ab0c9;
+	text-indent: 2%;
+	
+}
+footer .Img{
+	border-top: 1px solid #eee;
+	
+}
+footer .Img a{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-left: 17%;
+	margin-right: 8%;
+}
+footer .title .first{
+	color: #2ab0c9;
+}
+footer .title a{
+	display: inline-block;
+	margin-left: 16%;
+	margin-right: 6%;
+	text-align: center;
+	text-decoration: none;
+	color: #a5a5a5;
+}
+footer .title a:hover{
+	color:#2ab0c9;
+}

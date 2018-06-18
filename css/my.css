@@ -1,0 +1,204 @@
+/*样式初始化*/
+body,p,section,header,nav,h2,h3,h4,h5{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+input{
+	margin: 0;
+	padding: 0;
+}
+img{
+	border: none;
+	vertical-align: middle;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	
+	
+}
+.center{
+	width: 95%;
+	margin: 0 auto;
+	background: url(../img/palm-leaf.png)  repeat;
+	
+}
+html{
+	height: 100%;
+}
+
+body{
+	
+	width: 100%;
+	background:#f4f4f4 ;
+	
+}
+/*header*/
+header{
+	width: 100%;
+	height: 16.5%;
+	opacity: 0.9;
+	position: relative;
+	background: #1b82d2;
+	padding-top: 3%;
+	
+}
+
+header .title{
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 26px;
+	line-height: 30px;
+	position: relative;
+}
+
+header .my a{
+	display: inline-block;
+	margin:1% 3%;
+	border: 5px solid #5fa7df;
+	background: white;
+	border-radius: 40px;
+	
+}
+header .my .name{
+	display: inline-block;
+	color: white;
+	font-size: 22px;
+	width: 60%;
+	line-height: 38px;
+	letter-spacing: 3px;
+	margin-left: 2%;
+	
+	border-bottom: 3px dashed #5fa7df;;
+}
+
+header .integral{
+	font-size: 20px;
+	position: absolute;
+	left: 35%;
+	bottom: 0;
+	line-height: 20px;
+	letter-spacing: 3px;
+	margin: 0 auto;
+	color: #ffff ;
+	
+	bottom: 6%;
+}
+/*section*/
+section .resourceType{
+	margin-top: 6%;
+	width: 100%;
+	
+}
+
+section .resourceType a{
+	text-decoration: none;
+	color:#212F3D;
+	font-size: 20px;
+	letter-spacing: 2px;
+	height: 40px;
+	vertical-align: middle;
+	text-indent: 2.6em;
+	display: block;
+	border: 1px solid #21618C ;
+	line-height: 40px;
+	margin-bottom: 3%;
+	position: relative;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 6px;
+	
+}
+
+
+section .resourceType img{
+	position: absolute;
+	right: 0;
+	top: 16%;
+}
+section .resourceType .first{
+	background: white url(../img/我的预约.png) no-repeat 2% 50%;
+}
+section .resourceType .second{
+	background: white url(../img/我的信息.png) no-repeat 2% 50%;
+}
+section .resourceType .third{
+	background: white url(../img/目录.png) no-repeat 2% 50%;
+}section .resourceType .fourth{
+	background: white url(../img/电脑.png) no-repeat 2% 50%;
+}
+section .resourceType .fifth{
+	background: white url(../img/建议.png) no-repeat 2% 50%;
+}
+section .QQ {
+	display: inline-block;
+	width: 100%;
+	text-decoration: none;
+	color:#212F3D;
+	font-size: 20px;
+	height: 48px;
+	line-height: 48px;
+	margin-top: 2%;
+	
+}
+section span{
+	margin-left: 3%;
+	letter-spacing: 3px;
+}
+section .QQ img{
+	margin-left: 4%;
+}
+/*footer*/
+footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: white;
+
+}
+footer p{
+	
+	font-size: 18px;
+	color: #2ab0c9;
+	text-indent: 2%;
+	background:#f4f4f4 ;
+	
+	
+}footer .title .my{
+	color: #2ab0c9;
+}
+footer .Img{
+	border-top: 1px solid #eee;
+	
+}
+footer .Img a{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-left: 17%;
+	margin-right: 8%;
+}
+
+footer .title a{
+	display: inline-block;
+	margin-left: 16%;
+	margin-right: 6%;
+	text-align: center;
+	text-decoration: none;
+	color: #a5a5a5;
+}
+footer .title a:hover{
+	color:#2ab0c9;
+}

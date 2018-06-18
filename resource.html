@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/resource.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/weui-1.1.2/dist/style/weui.css" />
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			
+			<div class="page searchbar js_show">
+				
+				<div class="page__bd">
+					<!--<a href="javascript:;" class="weui-btn weui-btn_primary">点击展现searchBar</a>-->
+					<div class="weui-search-bar" id="searchBar">
+						<form class="weui-search-bar__form">
+							<div class="weui-search-bar__box">
+								<i class="weui-icon-search"></i>
+								<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="软件搜索" required="">
+								<a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+							</div>
+							<label class="weui-search-bar__label" id="searchText">
+                    <i class="weui-icon-search"></i>
+                    <span>软件搜索</span>
+                </label>
+						</form>
+						<a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+					</div>
+					<div class="weui-cells searchbar-result" id="searchResult">
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p>Office系列</p>
+							</div>
+						</div>
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p>PS插件包</p>
+							</div>
+						</div>
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p>音乐编辑器</p>
+							</div>
+						</div>
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p>实时搜索文本</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<script type="text/javascript" class="searchbar js_show">
+				$(function() {
+					var $searchBar = $('#searchBar'),
+						$searchResult = $('#searchResult'),
+						$searchText = $('#searchText'),
+						$searchInput = $('#searchInput'),
+						$searchClear = $('#searchClear'),
+						$searchCancel = $('#searchCancel');
+
+					function hideSearchResult() {
+						$searchResult.hide();
+						$searchInput.val('');
+					}
+
+					function cancelSearch() {
+						hideSearchResult();
+						$searchBar.removeClass('weui-search-bar_focusing');
+						$searchText.show();
+					}
+
+					$searchText.on('click', function() {
+						$searchBar.addClass('weui-search-bar_focusing');
+						$searchInput.focus();
+					});
+					$searchInput
+						.on('blur', function() {
+							if(!this.value.length) cancelSearch();
+						})
+						.on('input', function() {
+							if(this.value.length) {
+								$searchResult.show();
+							} else {
+								$searchResult.hide();
+							}
+						});
+					$searchClear.on('click', function() {
+						hideSearchResult();
+						$searchInput.focus();
+					});
+					$searchCancel.on('click', function() {
+						cancelSearch();
+						$searchInput.blur();
+					});
+				});
+			</script>
+		</header>
+		<section>
+
+			<div class="resourceType">
+
+				<a href="#" class="first">软件目录<img src="img/箭头.png" /></a>
+				
+				<a href="#" class="third">电脑推荐<img src="img/箭头.png" /></a>
+				<a href="#" class="fourth">协会活动<img src="img/箭头.png" /></a>
+				<a href="#" class="fifth">易班校园<img src="img/箭头.png" /></a>
+
+			</div>
+
+		</section>
+
+		<footer class="clearfix">
+			<p>计算机协会</p>
+			<div class="Img">
+				<a href="http://127.0.0.1:8020/System/index.html?__hbt=1526180807988"><img src="img/首页.png" /></a>
+				<a href="http://127.0.0.1:8020/System/book.html?__hbt=1526182224789"><img src="img/预约 (1).png" /></a>
+				
+				<a href="http://127.0.0.1:8020/System/my.html?__hbt=1526275228064"><img src="img/我.png" /></a>
+			</div>
+			<div class="title">
+				<a href="http://127.0.0.1:8020/System/index.html?__hbt=1526180807988">首页</a>
+				<a href="http://127.0.0.1:8020/System/book.html?__hbt=1526182224789">预约</a>
+				
+				<a href="http://127.0.0.1:8020/System/my.html?__hbt=1526275228064" class="my">我的</a>
+			</div>
+		</footer>
+	</body>
+
+</html>

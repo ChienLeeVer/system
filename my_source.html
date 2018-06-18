@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/my_resource.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/weui-1.1.2/dist/style/weui.css" />
+			<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+	</head>
+
+	<body>
+		<header>
+			
+			<div class="page searchbar js_show">
+
+				<div class="page__bd">
+					<!--<a href="javascript:;" class="weui-btn weui-btn_primary">点击展现searchBar</a>-->
+					<div class="weui-search-bar" id="searchBar">
+						<form class="weui-search-bar__form">
+							<div class="weui-search-bar__box">
+								<i class="weui-icon-search"></i>
+								<input type="search" class="weui-search-bar__input" id="searchInput" placeholder="软件搜索" required="">
+								<a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+							</div>
+							<label class="weui-search-bar__label" id="searchText">
+                    <i class="weui-icon-search"></i>
+                    <span>软件搜索</span>
+                </label>
+						</form>
+						<a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+					</div>
+					<div class="weui-cells searchbar-result" id="searchResult" style="display: none;">
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p>Office系列</p>
+							</div>
+						</div>
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p>PS插件包</p>
+							</div>
+						</div>
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p>音乐编辑器</p>
+							</div>
+						</div>
+						<div class="weui-cell weui-cell_access">
+							<div class="weui-cell__bd weui-cell_primary">
+								<p>实时搜索文本</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<script type="text/javascript" class="searchbar js_show">
+				$(function() {
+					var $searchBar = $('#searchBar'),
+						$searchResult = $('#searchResult'),
+						$searchText = $('#searchText'),
+						$searchInput = $('#searchInput'),
+						$searchClear = $('#searchClear'),
+						$searchCancel = $('#searchCancel');
+
+					function hideSearchResult() {
+						$searchResult.hide();
+						$searchInput.val('');
+					}
+
+					function cancelSearch() {
+						hideSearchResult();
+						$searchBar.removeClass('weui-search-bar_focusing');
+						$searchText.show();
+					}
+
+					$searchText.on('click', function() {
+						$searchBar.addClass('weui-search-bar_focusing');
+						$searchInput.focus();
+					});
+					$searchInput
+						.on('blur', function() {
+							if(!this.value.length) cancelSearch();
+						})
+						.on('input', function() {
+							if(this.value.length) {
+								$searchResult.show();
+							} else {
+								$searchResult.hide();
+							}
+						});
+					$searchClear.on('click', function() {
+						hideSearchResult();
+						$searchInput.focus();
+					});
+					$searchCancel.on('click', function() {
+						cancelSearch();
+						$searchInput.blur();
+					});
+				});
+			</script>
+		</header>
+		<section>
+
+			<div id="activity-detail" class="zh_CN mm_appmsg appmsg_skin_default rich_media_empty_extra not_in_mm">
+
+				<script nonce="" type="text/javascript">
+					var write_sceen_time = (+new Date());
+				</script>
+
+				<div id="js_article" class="rich_media">
+
+					<div id="js_top_ad_area" class="top_banner"></div>
+
+					<div class="rich_media_inner">
+
+						<div class="rich_media_content " lang="=&quot;en&quot;" id="js_content">
+
+							<section data-id="975146" class="">
+								<section style="padding: 10px;" class="">
+									<section style="width: 100%;text-align: center;" data-width="100%">
+										<section style="display: inline-block;padding-right: 15px;padding-left: 15px;border-bottom: 2px dashed rgb(51, 51, 51);" class="">
+											<section style="display: flex;display: -webkit-flex;font-size: 22px;">
+												<section style="color: #414141;padding:3px 5px;" class="">
+													<p><span style="font-size: 14px;"><strong>软件</strong></span></p>
+												</section>
+												<section style="margin-bottom: -3px;">
+													<section style="color:white; background-color: rgb(52, 152, 219);padding: 3px 10px;border-radius: 5px;" class="">
+														<p><span style="font-size: 14px;"><strong>导航</strong></span></p>
+													</section>
+													<section style="width: 0px;height: 0px;border-top: 12px solid rgb(52, 152, 219);border-right: 15px solid transparent;margin-left: 10px;" class="" data-width="0px"><br></section>
+												</section>
+											</section>
+										</section>
+									</section>
+								</section>
+							</section>
+							<section data-id="974416" class="">
+								<section style="padding:10px 10px;" class="">
+									<section style="width: 100%;border-width: 1px;border-style: solid;border-color: rgb(129, 183, 245);height: auto;overflow: hidden;" class="" data-width="100%">
+										<section style="float:left;width:33%;" data-width="33%">
+											<section style="padding:10px 10px;" class="">
+												<section style="width:100%;line-height:30px;font-size:12px;line-height:30px;text-align:center;" data-width="100%">
+													<p><span style="color: rgb(247, 150, 70);">电脑办公</span></p>
+													<p><span style="color: rgb(63, 63, 63);">机械设计</span></p>
+													<p><span style="color: rgb(247, 150, 70);">地理信息</span></p>
+													<p><span style="color: rgb(247, 150, 70);"><span style="color: rgb(63, 63, 63);">编程类</span></span>
+													</p>
+													<p><span style="color: rgb(247, 150, 70);">数据统计</span></p>
+												</section>
+											</section>
+										</section>
+										<section style="float:left;width:33%;border-left:solid 1px #999999;border-right:solid 1px #999999;" class="" data-width="33%">
+											<section style="padding:10px 10px;" class="">
+												<section style="width:100%;line-height:30px;font-size:12px;line-height:30px;text-align:center;" data-width="100%">
+													<p><span style="color: rgb(247, 150, 70);">室内/外设计</span></p>
+													<p><span style="color: rgb(63, 63, 63);">影视动画&nbsp;</span></p>
+													<p><span style="color: rgb(247, 150, 70);">网页设计</span></p>
+													<p><span style="color: rgb(247, 150, 70);"><span style="color: rgb(63, 63, 63);">电子绘图</span></span>
+													</p>
+													<p><span style="color: rgb(247, 150, 70);font-size: 12px;">理科工</span><span style="color: rgb(247, 150, 70);font-size: 12px;">具</span></p>
+												</section>
+											</section>
+										</section>
+										<section style="float:left;width:33%;" data-width="33%">
+											<section style="padding:10px 10px;" class="">
+												<section style="width:100%;line-height:30px;font-size:12px;line-height:30px;text-align:center;" data-width="100%">
+													<p><span style="color: rgb(247, 150, 70);">平面设计</span></p>
+													<p><span style="color: rgb(63, 63, 63);">建筑设计</span></p>
+													<p><span style="color: rgb(247, 150, 70);">屏幕录像</span></p>
+													<p><span style="color: rgb(247, 150, 70);"><span style="color: rgb(63, 63, 63);">&nbsp;数据库</span></span>
+													</p>
+													<p><span style="color: rgb(247, 150, 70);">虚拟机</span></p>
+												</section>
+											</section>
+										</section>
+									</section>
+								</section>
+							</section>
+							<section data-id="974570" class="" style="line-height: 25.6px;white-space: normal;">
+								<section style="margin-right: auto;margin-left: auto;border-width: initial;border-style: none;border-color: initial;text-align: center;">
+									<section style="display: inline-block;overflow: hidden;">
+										<section style="padding-right: 10px;padding-left: 10px;overflow: hidden;color: rgb(51, 51, 51);font-size: 14px;">
+											<section data-id="975146" class="">
+												<section style="padding: 10px;" class="">
+													<section style="width: 100%;text-align: center;" data-width="100%">
+														<section style="display: inline-block;padding-right: 15px;padding-left: 15px;border-bottom: 2px dashed rgb(51, 51, 51);" class="">
+															<section style="display: flex;display: -webkit-flex;font-size: 22px;">
+																<section style="color: #414141;padding:3px 5px;" class="">
+																	<p><span style="font-size: 14px;"><strong>软件目录</strong></span></p>
+																</section>
+																<section style="margin-bottom: -3px;">
+																	<section style="color: rgb(254,254,254);background-color: rgb(52, 152, 219);padding: 3px 10px;border-radius: 5px;" class="">
+																		<p><span style="font-size: 14px;"><strong>Windows</strong></span></p>
+																	</section>
+																	<section style="width: 0px;height: 0px;border-top: 12px solid rgb(52, 152, 219);border-right: 15px solid transparent;margin-left: 10px;" class="" data-width="0px"><br></section>
+																</section>
+															</section>
+														</section>
+													</section>
+												</section>
+											</section>
+										</section>
+									</section>
+								</section>
+							</section>
+							<table>
+								<tbody>
+									<tr>
+										<td rowspan="1" colspan="3" style="word-break: break-all;" valign="top"><span style="color: #D35400;">【电脑办公】</span><br></td>
+									</tr>
+									<tr>
+										<td rowspan="1" colspan="3" style="word-break: break-all;" valign="top" height="21"><strong><span style="font-size: 14px;">电脑系统(U盘安装）</span></strong></td>
+									</tr>
+									<tr>
+										<td style="word-break: break-all;" width="193" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199025&amp;idx=1&amp;sn=49b0d9b6d9f02b68223f7a9f913cde12&amp;chksm=8ee1731db996fa0b69afa3b6581b94e6350588e753cddda4f54d7082f7ba4c7e89a39b93045a&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">PE制作</span></a>
+										</td>
+										<td style="word-break: break-all;" width="150" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199025&amp;idx=2&amp;sn=e1db502ab3f81e4ef8edfa84df5ed7b1&amp;chksm=8ee1731db996fa0be5f18245e6501259a01325c1c8c378ceaf564575e66a4cea55c1b92a0400&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">WIN7</span></a>
+										</td>
+										<td style="word-break: break-all;" width="157" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199025&amp;idx=3&amp;sn=ea37bdb21efda9234df7f15a157b35aa&amp;chksm=8ee1731db996fa0b59a34986468b56c57022b61586a4ed11d8ee1e4d783b778a8898ddf60ac8&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">WIN8</span></a>
+										</td>
+									</tr>
+									<tr>
+										<td style="word-break: break-all;" width="193" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199025&amp;idx=4&amp;sn=f9e948d6d9775c37205c6bd76e667af7&amp;chksm=8ee1731db996fa0be5800d66773eec062ae693eaa8efa637688ae4a59a97e14fbbf63cc8aaae&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">WIN10</span></a>
+										</td>
+										<td style="word-break: break-all;" width="168" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199025&amp;idx=5&amp;sn=1c0b32b5699b76d2337853b29afa3453&amp;chksm=8ee1731db996fa0b66b50ba0dc11c27fbffe9779bc9774924e8278c1550af9e2b0e1f4c7c699&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">XP</span></a>
+										</td>
+										<td style="word-break: break-all;" width="157" valign="top"><br></td>
+									</tr>
+									<tr>
+										<td rowspan="1" colspan="3" style="word-break: break-all;" valign="top"><strong><span style="font-size: 14px;">电脑系统（直接安装）</span></strong></td>
+									</tr>
+									<tr>
+										<td rowspan="1" colspan="1" style="word-break: break-all;" width="193" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199025&amp;idx=6&amp;sn=dc696ef6b4d8fc3c84685d4cf26d8538&amp;chksm=8ee1731db996fa0b454f53d9dff6e0125837bcc0d2b0597366436ba2a0e367994c8f6d13871d&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">WIN7</span></a>
+										</td>
+										<td rowspan="1" colspan="1" style="word-break: break-all;" width="168" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199025&amp;idx=7&amp;sn=0a793357cb9446b2d6d3860c579ca214&amp;chksm=8ee1731db996fa0b048cf7ce497d8988a92e49bd5fd05acded100cd75e040d526f907489330c&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">WIN8</span></a>
+										</td>
+										<td rowspan="1" colspan="1" style="word-break: break-all;" width="157" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199025&amp;idx=8&amp;sn=87cd76c7017aa6eec3d136a545354a0e&amp;chksm=8ee1731db996fa0ba4d7fa00250db3f8d272f513fd442d7e70589cd0d3ec34fcbd508b10914b&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">WIN10</span></a>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="1" colspan="3" style="word-break: break-all;" valign="top"><span style="font-size: 14px;"><strong>Office</strong></span></td>
+									</tr>
+									<tr>
+										<td rowspan="1" colspan="1" style="word-break: break-all;" width="193" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650196142&amp;idx=5&amp;sn=7f9965e741bd95db3f80c76d81634d89&amp;chksm=8ee16842b996e15403baf624ede971fffcf6f9e7d7faeff96721c1344f380e035008cf43790d&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650196142&amp;idx=5&amp;sn=7f9965e741bd95db3f80c76d81634d89&amp;chksm=8ee16842b996e15403baf624ede971fffcf6f9e7d7faeff96721c1344f380e035008cf43790d&amp;scene=21#wechat_redirect"><span style="font-size: 14px;">office2003</span></a>
+										</td>
+										<td rowspan="1" colspan="1" style="word-break: break-all;" width="168" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650196142&amp;idx=4&amp;sn=803ed6d2667de6ac242215b0e9bbd7fd&amp;chksm=8ee16842b996e1542ba17d90fde50443397c70149922432432f5a0f7a404a8639a0ea2c1c386&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650196142&amp;idx=4&amp;sn=803ed6d2667de6ac242215b0e9bbd7fd&amp;chksm=8ee16842b996e1542ba17d90fde50443397c70149922432432f5a0f7a404a8639a0ea2c1c386&amp;scene=21#wechat_redirect"><span style="font-size: 14px;">office2007</span></a>
+										</td>
+										<td rowspan="1" colspan="1" style="word-break: break-all;" width="157" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199014&amp;idx=3&amp;sn=ef36aac47c3d526c065318a046d3ff7c&amp;chksm=8ee1730ab996fa1c8fe5dffd093d348661155f28cd39f7e53696dc3ac63cfc96d97aef041dc0&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">office2010</span></a>
+										</td>
+									</tr>
+									<tr>
+										<td rowspan="1" colspan="1" style="word-break: break-all;" width="193" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650196142&amp;idx=2&amp;sn=4e57870a6c199868a45f353dc7fa4063&amp;chksm=8ee16842b996e1541bb5cf7fce9a62077632569a23b775e5bbdef4bef980076b7380e6d6b850&amp;scene=21#wechat_redirect" target="_blank" data_ue_src="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650196142&amp;idx=2&amp;sn=4e57870a6c199868a45f353dc7fa4063&amp;chksm=8ee16842b996e1541bb5cf7fce9a62077632569a23b775e5bbdef4bef980076b7380e6d6b850&amp;scene=21#wechat_redirect"><span style="font-size: 14px;">office2013</span></a>
+										</td>
+										<td rowspan="1" colspan="1" style="word-break: break-all;" width="168" valign="top">
+											<a href="http://mp.weixin.qq.com/s?__biz=MzIwMjE1MjMyMw==&amp;mid=2650199014&amp;idx=1&amp;sn=971413929fab8bfff2a28c0e38ed6a35&amp;chksm=8ee1730ab996fa1c70d63c48a97528f1c496ea5ab818b0da7cfd20958556f3b8f5f6defff767&amp;scene=21#wechat_redirect" target="_blank"><span style="font-size: 14px;">office2016</span></a>
+										</td>
+										<td rowspan="1" colspan="1" width="157" valign="top"><br></td>
+									</tr>
+
+							</table>
+
+						</div>
+
+		</section>
+
+		<footer class="clearfix">
+			<p>计算机协会</p>
+			<div class="Img">
+				<a href="index.html"><img src="img/首页.png"/></a>
+				<a href="book.html"><img src="img/预约 (1).png"/></a>
+				
+				<a href="my.html"><img src="img/我.png"/></a>
+			</div>
+			<div class="title">
+				<a href="index.html">首页</a>
+				<a href="book.html">预约</a>
+				
+				<a href="my.html" class="my">我的</a>
+			</div>
+		</footer>
+	</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/book.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/weui-1.1.2/dist/style/weui.css" />
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+
+	<body>
+
+		<section class="center clearfix">
+
+			<div class="Img">
+				<img src="img/会徽.png" />
+			</div>
+
+			<form action="#" method="post">
+				<p class="title">电脑义诊预约单</p>
+				<div class="message">
+
+					<ul>
+						<li><label for="user">预约人:</label><input type="text" name="user" value="" placeholder="如：张三" class="user" autofocus="autofocus" /></li>
+						<li><label for="number">手机号:</label><input type="number" name="number" value="" class="user" maxlength="11" /></li>
+					</ul>
+
+					<div class="pT">
+						<p>问题类型:</p>
+						<input type="radio" name="problemType" value="Internet" id="Internet" /><label for="Internet">网络</label>
+						<input type="radio" name="problemType" value="hardware" id="hardware" /><label for="hardware">硬件</label>
+						<input type="radio" name="problemType" value="software" id="software" /><label for="software">软件</label>
+						<input type="radio" name="problemType" value="other" id="other" /><label for="other">其它</label>
+					</div>
+
+					<div class="mT">
+						<p>电脑机型:</p>
+						<input type="radio" name="machineType" value="desktop" id="desktop" /><label for="desktop">台式机</label>
+						<input type="radio" name="machineType" value="notebook" id="notebook" /><label for="notebook">笔记本</label>
+						<input type="radio" name="machineType" value="else" id="else" /><label for="machineType">其它</label>
+					</div>
+					
+					
+
+					<textarea name="question" rows="9" cols="8" placeholder="问题描述：" class="description"></textarea>
+				
+						
+						
+
+							<div class="weui-uploader__bd">
+								
+								<div class="weui-uploader__input-box">
+									<input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+								</div>
+							</div>
+
+						
+					
+				</div>
+
+				<div class="btn">
+					<a href="javascript:;" class="sub weui-btn weui-btn_default" id="showIOSDialog1">提交</a>
+				</div>
+			</form>
+			<div id="dialogs">
+        <!--BEGIN dialog1-->
+        <div class="js_dialog" id="iosDialog1" style="opacity: 1; display: none;">
+            <div class="weui-mask"></div>	
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd"><strong class="weui-dialog__title">提示</strong></div>
+                <div class="weui-dialog__bd">我们的工作人员将会尽快的处理你的问题，请耐心等候！</div>
+                <div class="weui-dialog__ft">
+                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定提交</a>
+                </div>
+            </div>
+        </div>
+        <!--END dialog1-->
+        
+    </div>
+    <script type="text/javascript" class="dialog js_show">
+    $(function(){
+        var $iosDialog1 = $('#iosDialog1'),
+            $iosDialog2 = $('#iosDialog2'),
+            $androidDialog1 = $('#androidDialog1'),
+            $androidDialog2 = $('#androidDialog2');
+
+        $('#dialogs').on('click', '.weui-dialog__btn', function(){
+            $(this).parents('.js_dialog').fadeOut(200);
+        });
+
+        $('#showIOSDialog1').on('click', function(){
+            $iosDialog1.fadeIn(200);
+        });
+        $('#showIOSDialog2').on('click', function(){
+            $iosDialog2.fadeIn(200);
+        });
+        $('#showAndroidDialog1').on('click', function(){
+            $androidDialog1.fadeIn(200);
+        });
+        $('#showAndroidDialog2').on('click', function(){
+            $androidDialog2.fadeIn(200);
+        });
+    });</script>
+
+			<div class="introduction">
+
+				<p>地点：明理楼C区1001</p>
+			
+				<p>工作时间：晚上19：00-22：00</p> 
+
+			</div>
+
+		</section>
+
+		<footer>
+			<p>计算机协会</p>
+			<div class="Img">
+				<a href="./index.html"><img src="img/首页.png"/></a>
+				<a href="./book.html"><img src="img/预约 (1).png"/></a>
+				
+				<a href="./my.html"><img src="img/我.png"/></a>
+			</div>
+			<div class="title">
+				<a href="./index.html" >首页</a>
+				<a href="./book.html" class="book">预约</a>
+				
+				<a href="./my.html" class="my">我的</a>
+			</div>
+		</footer>
+	</body>
+
+</html>

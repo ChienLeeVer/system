@@ -1,0 +1,187 @@
+/*样式初始化*/
+
+body,
+p,
+section,
+header,
+nav,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th,
+td {
+	padding: 0;
+}
+
+body {
+	background: #ebeff7;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+.center {
+	width: 95%;
+	margin: 0 auto;
+	background: url(../img/palm-leaf.png) repeat;
+}
+
+html {
+	height: 100%;
+	background: white;
+}
+
+body {
+	width: 100%;
+}
+
+
+/*header*/
+
+header {
+	width: 100%;
+	height: 4.5%;
+	background: #1b82d2;
+	padding-top: 1%;
+}
+
+header a {
+	display: inline-block;
+	margin-left: 2%;
+	height: 100%;
+}
+
+header p {
+	display: inline-block;
+	font-size: 18px;
+	margin-top: 1%;
+	letter-spacing: 1px;
+	color: white;
+	line-height: 20px;
+	height: 20px;
+	text-indent: 0.3em;
+}
+
+
+/*section*/
+
+section {
+	padding-bottom: 5%;
+	border-bottom: 1px dashed #717171;
+	background: white;
+}
+
+section .statusBar {
+	padding: 5% 0 6% 0;
+	background: green;
+}
+
+section .statusBar img {
+	display: inline-block;
+	margin-left: 10%;
+}
+
+section .statusBar p {
+	display: inline-block;
+	color: white;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	margin-left: 1.5%;
+	vertical-align: middle;
+}
+
+section .myMessage {
+	margin-left: 8%;
+	padding-top: 5%;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: #717171;
+}
+
+section .myMessage .number {
+	letter-spacing: 0;
+}
+
+section .myMessage li {
+	margin-bottom: 0.5%;
+}
+
+
+/*footer*/
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+footer p {
+	font-size: 18px;
+	color: #2ab0c9;
+	text-indent: 2%;
+}
+
+footer .Img {
+	border-top: 1px solid #eee;
+	background: white;
+	border-radius: 4px;
+}
+
+footer .Img a {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-left: 17%;
+	margin-right: 8%;
+}
+
+footer .title {
+	background: white;
+}
+
+footer .title a {
+	display: inline-block;
+	margin-left: 16%;
+	margin-right: 6%;
+	text-align: center;
+	text-decoration: none;
+	color: #a5a5a5;
+}
+
+footer .title a:hover {
+	color: #2ab0c9;
+}
